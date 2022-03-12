@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Builder</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <img src="./assets/img/logo.jpg" alt="logo CakeBuilder" width="150px">
+    <div class="sabores">
+        <header class="section-tittle">
+            <h1>Construye tu pastel</h1> <br><hr><br>
+        </header>
+        <h2>Sabores Disponibles</h2>
+        <p>Durazno -------------- $120.00 mxn</p>
+        <p>Fresa ---------------- $130.00 mxn</p>
+        <p>Manzana -------------- $150.00 mxn</p>
+        <p>Lechera -------------- $160.00 mxn</p>
+
+        <br><hr><br>
+
+        <h2>Adornos disponibles</h2>
+        <p>Chispas de chocolate -------------- $30.00 mxn</p>
+        <p>Glaseado -------------------------- $25.00 mxn</p>
+        <p>Merengue -------------------------- $35.00 mxn</p>
+        <p>Cubitos de fruta ------------------ $40.00 mxn</p>
+
+    </div>
+    <div>
+        <form action="/accion.js" id="pedido" method="post">
+            <h2>Combina y haz tu pedido</h2>
+            <div>
+                <div>
+                    <h3>Tu información</h3> <br>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre"><br>
+                    <label for="nombre">Teléfono:</label><br>
+                    <input type="tel" id="tel1" name="tel1" maxlength="10"><br>
+                    <label for="Correo">Correo:</label><br>
+                    <input type="email" id="correo1" name="correo1"><br>
+
+                <div>
+                    <h3>Elige el sabor</h3>
+                    <input type="checkbox" name="sabor1" id="fresa" value="Fresa" class="sabor"><label for="fresa">Fresa</label><br>
+                    <input type="checkbox" name="sabor2" id="durazno" value="Durazno" class="sabor"><label for="durazno">Durazno</label><br>
+                    <input type="checkbox" name="sabor3" id="manzana" value="Manzana" class="sabor"><label for="manzana">Manzana</label><br>
+                    <input type="checkbox" name="sabor4" id="lechera" value="Lechera" class="sabor"><label for="lechera">Lechera</label><br>
+                </div>
+                <div>
+                    <h3>Elige los adornos</h3>
+                        <input type="checkbox" name="topping1" id="topping1" value="Chispas de chocolate" class="adorno">
+                        <label for="topping1">Chispas de chocolate</label><br>
+                        <input type="checkbox" name="topping2" id="topping2" value="Glaseado" class="adorno">
+                        <label for="topping2">Glaseado</label><br>
+                        <input type="checkbox" name="topping3" id="topping3" value="Merengue" class="adorno">
+                        <label for="topping3">Merengue</label><br>
+                        <input type="checkbox" name="topping4" id="topping4" value="Cubitos de frutas" class="adorno">
+                        <label for="topping4"></label>Cubitos de frutas</label><br>
+                </div>
+                <br>
+                <div>
+                    <button type="submit"> Hacer pedido</button>
+                    <input type="reset">  
+                </div>
+            </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
